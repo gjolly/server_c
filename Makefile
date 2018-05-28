@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -pedantic
+CFLAGS=-std=c11 -Wall -pedantic
 DEPS=server.h parse_args.h
 OBJ=build/server.o build/main.o build/parse_args.o
 EXEC=server
