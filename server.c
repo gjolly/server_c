@@ -11,10 +11,12 @@
 #include <fcntl.h>
 
 #define BACKLOG 	100
-#define RESPFILE 	"response.http"
+#define RESPFILE 	"response.test"
 #define SIZEMAXRESP 200
 
 int serve(const char* ip_addr, int port) {
+	printf("Starting server on %s:%i...\n", ip_addr, port);
+	
 	// create socket
 	int sock = socket(AF_INET, SOCK_STREAM, 0);
 	

@@ -1,8 +1,8 @@
 #include "server.h"
+#include "parse_args.h"
 
-#define ADDR "127.0.0.1"
-#define PORT 8080
+int main(int argc, char** argv) {
+	parse_option(argc, argv);
 
-int main() {
-	return serve(ADDR, PORT);
+	return serve(arguments.address, arguments.port);
 }

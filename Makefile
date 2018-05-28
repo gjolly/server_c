@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -pedantic
-DEPS=server.h
-OBJ=build/server.o build/main.o
+DEPS=server.h parse_args.h
+OBJ=build/server.o build/main.o build/parse_args.o
 EXEC=server
 
 all: $(OBJ) buildDir
