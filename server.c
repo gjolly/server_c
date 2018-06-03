@@ -13,7 +13,7 @@
 #include <stdbool.h>
 
 #define BACKLOG 		100
-#define RESPFILE 		"response.test"
+#define RESPFILE 		"tests/response.test"
 #define SIZEMAXRESP		 200
 #define SIZE_MAX_HEADER 200
 

@@ -13,5 +13,12 @@ build/%.o: %.c $(DEPS) buildDir
 buildDir:
 	-mkdir build
 
+test: all
+	build/server &
+	sleep 2
+	cd tests
+	pytest
+	killall build/server
+
 clean:
 	rm -r build/
